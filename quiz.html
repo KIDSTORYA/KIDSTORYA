@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forest Adventure - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Quiz Time!</h2>
+        <p>What animal is Fuzzy?</p>
+        <button onclick="checkAnswer('bear')">A. Bear</button>
+        <button onclick="checkAnswer('fox')">B. Fox</button>
+        <button onclick="checkAnswer('owl')">C. Owl</button>
+    </div>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'fox') {
+                window.location.href = 'result.html?correct=true';
+            } else {
+                window.location.href = 'result.html?correct=false';
+            }
+        }
+    </script>
+</body>
+</html>

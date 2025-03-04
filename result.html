@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Your Result</h2>
+        <p id="resultText"></p>
+        <a href="index.html">Play Again</a>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const isCorrect = params.get('correct') === 'true';
+
+        document.getElementById('resultText').innerText = 
+            isCorrect ? "🎉 Yay! You got it right! Fuzzy is a fox!" : "Oops! Try again next time!";
+    </script>
+</body>
+</html>

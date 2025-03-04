@@ -1,0 +1,97 @@
+/* === General Reset === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    background-color: #fefbe9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* === Main Container === */
+.container {
+    background: #ffffff;
+    border: 6px solid #ffb703;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* === Headings === */
+h1, h2 {
+    color: #fb8500;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #023047;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* === Images inside story pages === */
+.story-image {
+    width: 150px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* === Buttons & Links === */
+a, button {
+    background-color: #fb8500;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+button {
+    display: block;
+    width: 100%;
+}
+
+a:hover, button:hover {
+    background-color: #ffb703;
+}
+
+/* === Quiz Page Buttons === */
+button {
+    background-color: #8ecae6;
+    color: #023047;
+}
+
+/* === Special style for correct/incorrect messages === */
+#resultText {
+    font-size: 22px;
+    font-weight: bold;
+    color: #023047;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
